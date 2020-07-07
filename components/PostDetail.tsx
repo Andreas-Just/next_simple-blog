@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import FormAddComment from './FormAddComment';
-import PostRemove from './PostRemove';
+import DeleteButton from './DeleteButton/DeleteButton';
 
 const Container = styled.article`
   position: relative;
@@ -20,8 +20,8 @@ const PostDetail = ({ post }: Props): JSX.Element => {
 
   return (
     <Container>
-      <PostRemove postId={post.id} buttonText="Remove Post" />
-      <h1>{title}</h1>
+      <DeleteButton postId={id} path="../trash.svg" />
+      <h2>{title}</h2>
       {body && (
         <Text>
           {body}

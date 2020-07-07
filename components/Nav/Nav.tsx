@@ -1,36 +1,14 @@
 import Link from 'next/link';
 import React from 'react';
-import styled from 'styled-components';
-
-const List = styled.ul`
-  display: flex;
-`;
-
-const Item = styled.li`
-  margin-right: 2rem;
-  list-style: none;
-`;
-
-const A = styled.a.attrs(() => ({ tabIndex: 0 }))`
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.3s;
-  cursor: pointer;
-  
-  &:hover {
-    color: #fff000;
-  }
-`;
+import { Navigation, List, Item, A } from './NavStyle'
 
 const Nav = (): JSX.Element => (
-  <nav>
+  <Navigation>
     <List>
       <Item>
         <Link href="/">
           <A>
-            HomePage
+            Home
           </A>
         </Link>
       </Item>
@@ -49,7 +27,7 @@ const Nav = (): JSX.Element => (
         </Link>
       </Item>
     </List>
-  </nav>
+  </Navigation>
 );
 
 export default Nav;

@@ -1,6 +1,6 @@
 # Next.js + Simple Blog
 
-[DEMO LINK](https://test-blog-theta.now.sh/)
+[DEMO LINK](https://next-simple-blog.vercel.app/)
 
 ## How  to run it
 
