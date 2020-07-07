@@ -1,11 +1,19 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
+import Layout from '../components/Layout';
+import PostList from '../components/PostList';
+import { getLastPosts } from '../store';
 
 const Index = (): JSX.Element => {
-
+  const posts = useSelector(getLastPosts);
+ 
   return (
-    <div>
-      <h1>Posts</h1>
-    </div>
+    <Layout>
+      <>
+        <h1>Newest Posts</h1>
+        <PostList posts={posts} />
+      </>
+    </Layout>
   )
 }
 
