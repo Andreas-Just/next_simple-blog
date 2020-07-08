@@ -1,6 +1,6 @@
 import React from 'react';
-import { ThemeProvider } from '../../assets/themed-components';
-import { myTheme } from '../../assets/theme';
+import { ThemeProvider } from '../../assets/style/themed-components';
+import { myTheme } from '../../assets/style/theme';
 import { Container, H2 } from './FooterStyle'
 
 

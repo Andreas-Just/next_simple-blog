@@ -1,4 +1,4 @@
-import styled, { withProps } from '../../assets/themed-components';
+import styled, { withProps } from '../../assets/style/themed-components';
 
 export const Delete = withProps<{}, HTMLHeadElement>(styled.div)`
   width: 2rem;

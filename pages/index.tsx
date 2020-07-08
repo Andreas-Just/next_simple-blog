@@ -1,11 +1,11 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import Layout from '../components/Layout';
 import { getLastPosts } from '../store';
-import styled, { ThemeProvider, withProps } from '../assets/themed-components';
-import { SubTitle } from '../components/Header/HeaderStyle'
-import { myTheme } from '../assets/theme';
-import PostList from '../components/PostList/PostList';
+import styled, { ThemeProvider, withProps } from '../assets/style/themed-components';
+import { myTheme } from '../assets/style/theme';
+import Layout from '../components/Layout';
+import PostList from '../components/PostList';
+import { SubTitle } from '../components/Header'
 
 export const H2 = withProps<{}, HTMLHeadElement>(styled.h2)`
   font-size: 2.2rem;

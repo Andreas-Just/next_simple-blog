@@ -1,4 +1,4 @@
-import styled, { withProps } from '../../assets/themed-components';
+import styled, { withProps } from '../../assets/style/themed-components';
 
 export const Navigation = withProps<{}, HTMLHeadElement>(styled.nav)`
   padding: 1rem;

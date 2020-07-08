@@ -1,11 +1,11 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { getPostsSortByDate } from '../../store';
-import { ThemeProvider } from '../../assets/themed-components';
-import { myTheme } from '../../assets/theme';
-import { H2 } from '../../pages';
+import { ThemeProvider } from '../../assets/style/themed-components';
+import { myTheme } from '../../assets/style/theme';
+import { H2 } from '../index';
 import Layout from '../../components/Layout';
-import PostList from '../../components/PostList/PostList';
+import PostList from '../../components/PostList';
 
 const WithStaticProps = (): JSX.Element => {
   const posts = useSelector(getPostsSortByDate);

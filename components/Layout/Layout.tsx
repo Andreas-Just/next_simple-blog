@@ -1,19 +1,8 @@
 import Head from 'next/head';
 import React from 'react';
-import styled, { ThemeProvider } from '../assets/themed-components';
-import Footer from './Footer/Footer';
-import Header from './Header/Header';
-
-const Main = styled.main`
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  flex-grow: 1;
-  padding: 1rem;
-  height: auto;
-  max-width: 1980px;
-`;
+import Footer from '../Footer';
+import Header from '../Header';
+import { Main } from './LayoutStyle'
 
 interface Props {
   title?: string;

@@ -1,9 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
-import { ThemeProvider } from '../../assets/themed-components';
-import { myTheme } from '../../assets/theme';
+import { ThemeProvider } from '../../assets/style/themed-components';
+import { myTheme } from '../../assets/style/theme';
 import { ContainerPost, H4, P, ContainerButton, EditButton, EditImg,  } from './PostItemStyle'
-import DeleteButton from '../DeleteButton/DeleteButton';
+import DeleteButton from '../DeleteButton';
 
 interface Props {
   post: Post;

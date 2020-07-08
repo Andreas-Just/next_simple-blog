@@ -1,8 +1,8 @@
 import React from 'react';
-import { ThemeProvider } from '../../assets/themed-components';
-import { myTheme } from '../../assets/theme';
+import { ThemeProvider } from '../../assets/style/themed-components';
+import { myTheme } from '../../assets/style/theme';
 import { Container, Title, SubTitle} from './HeaderStyle'
-import Nav from '../Nav/Nav';
+import Nav from '../Nav';
 
 const Header = (): JSX.Element => {
   return (

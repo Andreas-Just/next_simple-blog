@@ -1,8 +1,8 @@
 import React from 'react';
-import { ThemeProvider } from '../../assets/themed-components';
-import { myTheme } from '../../assets/theme';
+import { ThemeProvider } from '../../assets/style/themed-components';
+import { myTheme } from '../../assets/style/theme';
 import { Container, Item } from './PostListStyle'
-import PostItem from '../PostItem/PostItem';
+import PostItem from '../PostItem';
 
 interface Props {
   posts: Post[];
