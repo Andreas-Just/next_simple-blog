@@ -1,17 +1,11 @@
 import Router from 'next/router';
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import styled from 'styled-components';
-import * as api from '../helpers/api';
-import * as store from '../store/posts';
-import FormButton from './Button';
-import FormTextarea from './FormTextarea';
-
-const Form = styled.form`
-  max-width: 20rem;
-  margin: 0 auto;
-  padding: 0 0 1rem;
-`;
+import * as api from '../../helpers/api';
+import * as store from '../../store/posts';
+import FormButton from '../FormButton';
+import FormTextarea from '../FormTextarea';
+import { FormComment } from './FormAddCommentStyle'
 
 interface Props {
   postId: number;
@@ -39,22 +33,22 @@ const FormAddComment = ({ postId }: Props): JSX.Element => {
   }
 
   return (
-    <Form onSubmit={handleSubmit}>
+    <FormComment onSubmit={handleSubmit}>
       <FormTextarea
         name="body"
         id="commentBody"
         placeholder="Comment it there..."
         value={commentBody}
         onChange={setCommentBody}
-      />      
-      <FormButton 
+      />
+      <FormButton
         type="submit"
         name="Send comment"
         id="send-comment"
         disabled={!commentBody}
         onClick={handleSubmit}
       />
-    </Form>
+    </FormComment>
   );
 }
 

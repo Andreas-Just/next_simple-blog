@@ -1,21 +1,12 @@
 import React from 'react';
-import styled from 'styled-components';
-
-const Field = styled.div`
-  display: flex;
-  margin-bottom: 1rem;
-`;
-
-const Label = styled.label`
-  width: 100%;
-`;
+import { Field, Label } from './FormFieldStyle'
 
 interface Props {
   children: JSX.Element;
   id: string;
 }
 
-const FormFieldWrapper = ({ 
+const FormField = ({
   children,
   id,
  }: Props): JSX.Element => {
@@ -29,4 +20,4 @@ const FormFieldWrapper = ({
   )
 }
 
-export default FormFieldWrapper;
+export default FormField;

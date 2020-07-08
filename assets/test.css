@@ -10,5 +10,8 @@
   margin-top: auto;
   margin-bottom: 1rem;
   text-align: left;
+  align-self: center;
   transition: all 200ms ease-in-out;
+  border: none;
+  vertical-align: middle;
 }

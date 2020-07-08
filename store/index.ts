@@ -17,7 +17,7 @@ export const getPostsSortByDate = createSelector(
 );
 export const getLastPosts = createSelector(
   getPostsSortByDate,
-  (posts: Post[]) => [...posts].slice(0, 16),
+  (posts: Post[]) => [...posts].slice(-1),
 );
 
 export type RootState = ReturnType<typeof rootReducer>;

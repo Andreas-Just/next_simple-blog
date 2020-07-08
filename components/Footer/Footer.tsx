@@ -1,7 +1,7 @@
 import React from 'react';
 import { ThemeProvider } from '../../assets/style/themed-components';
 import { myTheme } from '../../assets/style/theme';
-import { Container, H2 } from './FooterStyle'
+import { Container, H2 } from './FooterStyle';
 
 
 const Footer = (): JSX.Element => {

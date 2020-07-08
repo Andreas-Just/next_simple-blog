@@ -1,18 +1,12 @@
 import Router from 'next/router';
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import styled from 'styled-components';
-import * as api from '../helpers/api';
-import { setPosts } from '../store/posts';
-import FormButton from './Button';
-import FormInput from './FormInput';
-import FormTextarea from './FormTextarea';
-
-const Form = styled.form`
-  max-width: 20rem;
-  margin: 0 auto;
-  padding: 0 0 1rem;
-`;
+import * as api from '../../helpers/api';
+import { setPosts } from '../../store/posts';
+import FormButton from '../FormButton';
+import FormInput from '../FormInput';
+import FormTextarea from '../FormTextarea';
+import { FormPost } from './FormAddPostStyle';
 
 const FormAddPost = (): JSX.Element => {
   const [postTitle, setPostTitle] = useState('');
@@ -38,7 +32,7 @@ const FormAddPost = (): JSX.Element => {
   }
 
   return (
-    <Form onSubmit={handleSubmit}>
+    <FormPost onSubmit={handleSubmit}>
       <FormInput
         type="text"
         name="title"
@@ -53,15 +47,15 @@ const FormAddPost = (): JSX.Element => {
         placeholder="Your Post"
         value={postBody}
         onChange={setPostBody}
-      />      
-      <FormButton 
+      />
+      <FormButton
         type="submit"
         name="Send post"
         id="send-post"
         disabled={!postTitle && !postBody}
         onClick={handleSubmit}
       />
-    </Form>
+    </FormPost>
   );
 }
 

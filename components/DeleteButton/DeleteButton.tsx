@@ -1,7 +1,7 @@
 import Router from 'next/router';
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { Delete, TrashImg } from './DeleteButtonStyle'
+import { Delete, TrashImg } from './DeleteButtonStyle';
 import * as api from '../../helpers/api';
 import * as store from '../../store/posts';
 

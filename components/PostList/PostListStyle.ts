@@ -16,8 +16,6 @@ export const Item = withProps<{}, HTMLHeadElement>(styled.li)`
   justify-content: space-between;
   margin-bottom: 2rem;
   width: 100%;
-  height: 10rem;
   background-color: ${props => props.theme.colors.bgLight};
   box-shadow: ${props => props.theme.boxShadow};
-  overflow: hidden;
 `;

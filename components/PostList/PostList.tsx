@@ -1,7 +1,7 @@
 import React from 'react';
 import { ThemeProvider } from '../../assets/style/themed-components';
 import { myTheme } from '../../assets/style/theme';
-import { Container, Item } from './PostListStyle'
+import { Container, Item } from './PostListStyle';
 import PostItem from '../PostItem';
 
 interface Props {

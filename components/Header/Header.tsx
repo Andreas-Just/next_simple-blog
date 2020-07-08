@@ -1,7 +1,7 @@
 import React from 'react';
 import { ThemeProvider } from '../../assets/style/themed-components';
 import { myTheme } from '../../assets/style/theme';
-import { Container, Title, SubTitle} from './HeaderStyle'
+import { Container, Title, SubTitle} from './HeaderStyle';
 import Nav from '../Nav';
 
 const Header = (): JSX.Element => {

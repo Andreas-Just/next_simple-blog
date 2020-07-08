@@ -1,12 +1,6 @@
 import React from 'react';
-import styled from 'styled-components';
-import FormFieldWrapper from './FormFieldWrapper';
-
-const Input = styled.input`
-  width: 100%;
-  box-sizing: border-box;
-  padding: 0.5rem 1rem;
-`;
+import FormField from '../FormField';
+import { Input } from './FormInputStyle';
 
 interface Props {
   type: InputType;
@@ -17,7 +11,7 @@ interface Props {
   onChange: (value: string) => void;
 }
 
-const FormInput = ({ 
+const FormInput = ({
   type = 'text',
   name,
   id,
@@ -27,16 +21,16 @@ const FormInput = ({
  }: Props): JSX.Element => {
 
   return (
-    <FormFieldWrapper id={id}>
+    <FormField id={id}>
       <Input
         type={type}
         name={name}
         id={id}
         placeholder={placeholder}
         value={value}
-        onChange={(e) => onChange(e.target.value)}
+        onChange={(e: { target: { value: string; } }) => onChange(e.target.value)}
       />
-    </FormFieldWrapper>
+    </FormField>
   )
 }
 

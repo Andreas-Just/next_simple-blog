@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
-import { Navigation, List, Item, A } from './NavStyle'
+import { Navigation, List, Item, A } from './NavStyle';
 
 const Nav = (): JSX.Element => (
   <Navigation>

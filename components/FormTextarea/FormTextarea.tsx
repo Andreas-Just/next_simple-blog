@@ -1,14 +1,6 @@
 import React from 'react';
-import styled from 'styled-components';
-import FormFieldWrapper from './FormFieldWrapper';
-
-const Textarea = styled.textarea`
-  width: 100%;
-  height: 10rem;
-  box-sizing: border-box;
-  padding: 1rem;
-  resize: none;
-`;
+import FormField from '../FormField';
+import { Textarea } from  './FormTextareaStyle';
 
 interface Props {
   name: string;
@@ -26,15 +18,15 @@ const FormTextarea = ({
   onChange,
 }: Props): JSX.Element => {
   return (
-    <FormFieldWrapper id={id}>
+    <FormField id={id}>
       <Textarea
         name={name}
         id={id}
         placeholder={placeholder}
         value={value}
-        onChange={(e) => onChange(e.target.value)}
+        onChange={(e: { target: { value: string } }) => onChange(e.target.value)}
       />
-    </FormFieldWrapper>
+    </FormField>
   )
 }
 

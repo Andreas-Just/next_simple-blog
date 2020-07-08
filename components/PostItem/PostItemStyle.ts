@@ -1,6 +1,6 @@
 import styled, { withProps } from '../../assets/style/themed-components';
 
-export const ContainerPost = styled.div`
+export const ContainerPost = withProps<{}, HTMLHeadElement>(styled.div)`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -18,7 +18,7 @@ export const H4 = withProps<{}, HTMLHeadElement>(styled.h4)`
 `;
 
 export const P = withProps<{}, HTMLHeadElement>(styled.p)`
-  margin-top: 10px;
+  margin-top: 0.7rem;
   font-size: 1.1rem;
   font-weight: 300;
   line-height: 1.6;

@@ -10,6 +10,7 @@ import { SubTitle } from '../components/Header'
 export const H2 = withProps<{}, HTMLHeadElement>(styled.h2)`
   font-size: 2.2rem;
   font-weight: 500;
+  align-self: center;
   color: ${props => props.theme.colors.bgDark};
 `;
 export const H3 = withProps<{}, HTMLHeadElement>(styled(SubTitle))`
@@ -30,7 +31,7 @@ const Index = (): JSX.Element => {
           edit them and add comments to them. <br/>
           You can also create your own posts.
         </H3>
-        <PostList posts={posts.slice(-1)} />
+        <PostList posts={posts} />
       </ThemeProvider>
     </Layout>
   )
